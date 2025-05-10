@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Coin Collection</title>
+  <header>
+    <h1>The Coin Collection</h1>
+    <nav>
+      <button class="button" onclick="showPage('home')">Home</button>
+      <button class="button" onclick="showPage('about')">About</button>
+      <button class="button" onclick="showPage('explore')">Explore</button>
+      <button class="button" onclick="showPage('shop')">Shop</button>
+      <button class="button" onclick="showPage('contact')">Contact</button>
+    </nav>
+  </header>
+</head>
+<body>
+
+  
+
+  <!-- Home Page -->
+  <section id="home" class="page active">
+    <main>
+    <h2>Welcome to The Coin Collection</h2>
+    <p>Explore rare coins from the United States and around the world. Stay up to date with our newsletter, browse the store, and learn more about our mission to preserve history through currency.</p>
+    <button class="button">Explore Store</button>
+    <button class="button">Join Newsletter</button>
+  </main>
+<body>
+
+  <section id="gallery" class="gallery">
+    <h2>Featured Coins</h2>
+    <div class="gallery-container">
+      <div class="coin-card" id="coin1">
+        <img src="https://cdn11.bigcommerce.com/s-v79u0/images/stencil/1280x1280/products/1373/1811/1884-CC_MSD_OBV__66984.1592235380.jpg?c=2" alt="Coin 1" class="coin-image">
+        <div class="coin-info">
+          <h3>1884-85 Uncirculated Silver Dollar</h3>
+          <p>this silver dollar was minted in carson city towards the end of the CC mint</p>
+        </div>
+      </div>
+
+      <div class="coin-card" id="coin2">
+        <img src="https://i.ucoin.net/coin/47/791/47791612-2/mexico-100-pesos-1985.jpg" alt="Coin 2" class="coin-image">
+        <div class="coin-info">
+          <h3>1985 Mexico 100 pesos</h3>
+          <p>This coin is very cool in the sense that it is very heavy and large, (13 grams, 31mm diameter)</p>
+        </div>
+      </div>
+
+      <div class="coin-card" id="coin3">
+        <img src="https://en.numista.com/catalogue/photos/israel/2273-original.jpg" alt="Coin 3" class="coin-image">
+        <div class="coin-info">
+          <h3>1968 uncirculated Israeli 1 Lira</h3>
+          <p>this israeli coin was for the 20th annivery of israel and is part of a collectors set of israeli coins.</p>
+        </div>
+      </div>
+
+      <div class="coin-card" id="coin4">
+        <img src="https://en.numista.com/catalogue/photos/japon/6436a06f0eaf71.69489345-original.jpg" alt="Coin 4" class="coin-image">
+        <div class="coin-info">
+          <h3>1944 Japanese 1 sen</h3>
+          <p>this World war II era coin is actually made of majority tin! which is actually not that common in the coin producing world.</p>
+        </div>
+      </div>
+
+      <div class="coin-card" id="coin5">
+        <img src="https://i.ucoin.net/coin/50/521/50521777-2/ussr-20-kopeks-1923.jpg" alt="Coin 5" class="coin-image">
+        <div class="coin-info">
+          <h3>1923 Soviet 20 Kopeks</h3>
+          <p>This coin is from pre World war II era and from no longer existent Soviet Russia AKA the USSR.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="about-section">
+    <h3>About My Company</h3>
+    <p>Founded by a passionate collector, The Coin Collection is a place where history, art, and community meet. I source majority of my coins from my collection and from all over the world. All of these coin also share stories from wherever they are from. Whether you're a beginner or expert, there's something here for everyone.</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 The Coin Collection. All rights reserved.</p>
+    <p>Contact me at <a href="Thecoincollectionus@gmail.com">thecoincollectionus@gmail.com</a></p>
+  </footer>
+</body>
+    </section>
+
+  <!-- About Page -->
+  <section id="about" class="page">
+    <h2>About The Coin Collection</h2>
+    <p>The Coin Collection was founded by passionate numismatists dedicated to preserving history through currency. Our collection spans centuries and continents, celebrating the beauty and legacy of coins.</p>
+  </section>
+
+  <!-- Explore Page -->
+  <section id="explore" class="page">
+    <h2>Explore Coins</h2>
+    <p>Browse through categories like American Coins, European coins, Central american coins, and Graded/uncirculated coins. Discover rare finds and learn the stories behind each piece.</p>
+  </section>
+
+  <!-- Shop Page -->
+  <section id="shop" class="page">
+    <h2>Shop Coins</h2>
+    <p>Find unique coins for purchase, with authenticated provenance and secure shipping. Ideal for collectors and enthusiasts alike.</p>
+    <ul>
+      <li>Ancient Greek Coin - $200</li>
+      <li>19th Century British Penny - $15</li>
+      <li>Gold Liberty Head - $950</li>
+    </ul>
+  </section>
+
+  <!-- Contact Page -->
+  <section id="contact" class="page">
+    <h2>Contact Us</h2>
+    <p>Email: support@coincollection.com</p>
+    <p>Phone: +1 (800) 555-COIN</p>
+    <p>Location: 123 Numismatic Lane, Historyville, USA</p>
+  </section>
+  <section class="newsletter-section">
+  <h2>Subscribe to Our Newsletter</h2>
+  <form class="newsletter-form">
+    <input type="email" placeholder="Enter your email" required />
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+  
+  
+  <script>
+    function showPage(id) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => page.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</html>
